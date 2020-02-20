@@ -1,0 +1,31 @@
+.navbar {
+    justify-self: end;
+    ul {
+        display: inline-flex;
+        .link {
+            color: #fff;
+            text-decoration: none;
+            display: inline-block;
+            margin: 0 20px;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 100%;
+            text-transform: uppercase;
+            letter-spacing: .07em;
+            font-family: Futura,sans-serif;
+            &::after {
+                content: '';
+                display: block;
+                width: 0;
+                height: 2px;
+                background: #fff;
+                transition: width .3s;
+                margin-top: 5px;
+            }
+            &:hover::after {
+                width: 100%;
+                border-left: 1px solid #fff;
+            }
+        }
+    }
+}

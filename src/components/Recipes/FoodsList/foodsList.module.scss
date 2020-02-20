@@ -1,0 +1,21 @@
+.foods {
+    padding: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    .food {
+        text-decoration: none;
+        justify-self: center;
+    }
+}
+
+.categoryTitle {
+    text-align: center;
+    font-size: 38px;
+    font-weight: 500;
+    font-family: Futura,sans-serif;
+    vertical-align: baseline;
+    color: #000;
+    margin-top: 20px;
+}

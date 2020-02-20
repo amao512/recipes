@@ -1,0 +1,16 @@
+.slideContainer {
+    width: 100%;
+    // position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -999;
+}
+
+.eachSlide > div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    height: 100vh;
+}

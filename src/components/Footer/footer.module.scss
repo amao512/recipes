@@ -1,0 +1,45 @@
+.footer {
+    background: #000;
+    color: #fff;
+    margin-top: 10px;
+    footer {
+        padding: 10px 0;
+        .mainInfo {
+            padding: 20px 10px;
+            width: 250px;
+            .logo {
+                padding: 20px 0;
+            }
+            .logoBorder {
+                height: 2px;
+                width: 50px;
+                background: #fff;
+            }
+            .info {
+                padding: 20px 0;
+                p {
+                    color: #484a49;
+                }
+            }
+            .phoneEmailWebsite {
+                padding: 10px 0;
+                p {
+                    padding: 5px 0;
+                    font-size: 16px;
+                    span {
+                        color: #484a49;
+                    }
+                }
+            }
+        }
+        .copyright {
+            text-align: center;
+            padding: 15px 0 5px 0;
+            border-top: 1px solid #484a49;
+            h3 {
+                color: #484a49;
+                font-size: 12px;
+            }
+        }
+    }
+}
