@@ -1,5 +1,5 @@
 import React from 'react';
-import s from './backgroundImage.module.scss';
+import s from './mainPage.module.scss';
 import { Slide } from 'react-slideshow-image';
 
 import img1 from '../../assets/images/ezhevika_iagody_lozhka_142705_1920x1080.jpg';

@@ -1,4 +1,5 @@
 .ingredients {
+    width: 100%;
     h3 {
         background: #000;
         color: #fff;
@@ -15,7 +16,6 @@
         transition: all .2s ease;
         &:hover {
             background-color:#d3d3d3;
-            // color:#fff;
         }
         .count {
             justify-self: end;

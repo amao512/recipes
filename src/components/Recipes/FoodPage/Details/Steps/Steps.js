@@ -1,14 +1,13 @@
 import React from 'react';
 import s from './steps.module.scss';
 
-
 const Steps = ({ steps }) => {
     return (
         <div className={s.steps}>
             {steps.map(step => (
                 <div key={step.id} className={s.eachStep}>
                     <div className={s.image}>
-                        <img src={step.img} alt='step-img'/>
+                        <img src={step.img} alt='step-img'/> 
                     </div>
                     <div className={s.info}>
                       <p className={s.step}>STEP {step.step}</p>

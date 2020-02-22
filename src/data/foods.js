@@ -4,6 +4,7 @@ export const data = {
     food: [
         {   
             id: v4(),
+            index: 0,
             slug: "spinach-and-beetroot-salad",
             category: "salads",
             title: "Spinach & Beetroot Salad",
@@ -13,6 +14,7 @@ export const data = {
 
         {   
             id: v4(),
+            index: 1,
             slug: "kurinoe-file-na-skovorode-gril",
             category: "dishes",
             title: "Куриное филе на сковороде гриль",
@@ -108,6 +110,7 @@ export const data = {
 
         {   
             id: v4(),
+            index: 2,
             slug: "salo-suhim-posolom",
             category: "snack",
             title: "Сало сухим посолом",
@@ -174,6 +177,7 @@ export const data = {
 
         {   
             id: v4(),
+            index: 3,
             slug: "desert-iz-morozhenogo-kivi",
             category: "dessert",
             title: "Десерт из мороженого «Киви»",
@@ -220,6 +224,7 @@ export const data = {
 
         {   
             id: v4(),
+            index: 4,
             slug: "shchi-c-kvashenoi-kapustoi",
             category: "soup",
             title: "Щи с квашеной капустой",
@@ -315,6 +320,7 @@ export const data = {
 
         {   
             id: v4(),
+            index: 5,
             slug: "salat-vlyublennyj-valentin",
             category: "salads",
             title: "Салат «Влюбленный Валентин»",
@@ -440,6 +446,7 @@ export const data = {
 
         {
             id: v4(),
+            index: 6,
             slug: 'italyanskaya-picca',
             category: 'bakery',
             title: 'Итальянская пицца',
@@ -531,6 +538,7 @@ export const data = {
 
         {
             id: v4(),
+            index: 7,
             slug: 'testo-na-manty',
             category: 'testo',
             title: 'Тесто на манты',
@@ -585,6 +593,7 @@ export const data = {
 
         {
             id: v4(),
+            index: 8,
             slug: 'marinovannye-pomidory-sladko-ostrye',
             category: 'zagotovki',
             title: 'Маринованные помидоры сладко-острые',
@@ -633,7 +642,8 @@ export const data = {
                     img: 'https://kedem.ru/photo/recipe/2012/08/20120816-pomidory-05.jpg'
                 },
             ]
-        }
+        },
+        
     ],
 
     categories: [

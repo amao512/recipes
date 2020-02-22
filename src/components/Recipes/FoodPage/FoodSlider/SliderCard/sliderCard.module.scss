@@ -1,0 +1,33 @@
+.slider {
+    .slide {
+        width: 150px;
+        div {
+            .slideImg {
+                width: 100%;
+            }
+            .foodTitle {
+                display: none;
+                position: absolute;
+                bottom: 0;
+                height: 100%;
+                width: 100%;
+                background: rgba(0, 0, 0, 0.5);
+                font-size: 20px;
+                text-decoration: none;
+                color: #fff;
+                transition: all .3s ease;
+                span {
+                    position: absolute;
+                    bottom: 20px;
+                    left: 20px;
+                    transition: all .3s ease;
+                }
+            }
+        }
+        &:hover {
+            .foodTitle {
+                display: block;
+            }
+        }
+    }       
+}

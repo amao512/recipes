@@ -1,0 +1,23 @@
+h1 {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.carousel {
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    align-items: center;
+    .btnBack,
+    .btnNext {
+        .btn {
+            border: none;
+            border-radius: 50%;
+            outline: none;
+            padding: 5px;
+            background: none;
+        }
+    }
+    .btnNext {
+        justify-self: end;
+    }
+}
