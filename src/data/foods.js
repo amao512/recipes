@@ -643,7 +643,65 @@ export const data = {
                 },
             ]
         },
-        
+
+        {
+            id: v4(),
+            index: 9,
+            slug: 'goryachij-shokolad-s-marshmellou',
+            category: 'drink',
+            title: 'Горячий шоколад с маршмеллоу',
+            img: 'https://kedem.ru/photo/recipe/rname/goryachij-shokolad-s-marshmellou.jpg',
+            info: 'Горячий шоколад с маршмеллоу, это прекрасный способ согреть себя и побаловать детей после веселой зимней прогулки.',
+            ingredients: [
+                {id: v4(), name: 'Молоко 6%', count: '500 мл'},
+                {id: v4(), name: 'Шоколад 70%', count: '100 г'},
+                {id: v4(), name: 'Маршмеллоу', count: '50 г'},
+            ],
+            steps: [
+                {
+                    id: v4(), 
+                    step: 1,
+                    instruction: 'Плитку шоколада поломать на кусочки.', 
+                    img: 'https://kedem.ru/photo/recipe/2019/12/goryachij-shokolad-s-marshmellou-01.jpg'
+                },
+                {
+                    id: v4(), 
+                    step: 2,
+                    instruction: '500 мл молока перелить в сотейник и подогреть.', 
+                    img: 'https://kedem.ru/photo/recipe/2019/12/goryachij-shokolad-s-marshmellou-02.jpg'
+                },
+                {
+                    id: v4(), 
+                    step: 3,
+                    instruction: 'Добавить шоколад.', 
+                    img: 'https://kedem.ru/photo/recipe/2019/12/goryachij-shokolad-s-marshmellou-03.jpg'
+                },
+                {
+                    id: v4(), 
+                    step: 4,
+                    instruction: 'Помешивая венчиком, довести до кипения и снять с огня.', 
+                    img: 'https://kedem.ru/photo/recipe/2019/12/goryachij-shokolad-s-marshmellou-04.jpg'
+                },
+                {
+                    id: v4(), 
+                    step: 5,
+                    instruction: 'Разлить по бокалам.', 
+                    img: 'https://kedem.ru/photo/recipe/2019/12/goryachij-shokolad-s-marshmellou-05.jpg'
+                },
+                {
+                    id: v4(), 
+                    step: 6,
+                    instruction: 'Добавить маршмеллоу в каждый бокал.', 
+                    img: 'https://kedem.ru/photo/recipe/2019/12/goryachij-shokolad-s-marshmellou-06.jpg'
+                },
+                {
+                    id: v4(), 
+                    step: 7,
+                    instruction: 'Горячий шоколад с маршмеллоу готов. Сразу подавать к столу.', 
+                    img: 'https://kedem.ru/photo/recipe/2019/12/goryachij-shokolad-s-marshmellou-07.jpg'
+                },
+            ]
+        },
     ],
 
     categories: [
@@ -651,9 +709,10 @@ export const data = {
         {id: 2, title: 'Вторые', slug: 'dishes'},
         {id: 3, title: 'Закуски', slug: 'snack'},
         {id: 4, title: 'Выпечка', slug: 'bakery'},
-        {id: 5, title: 'Супы', slug: 'soup'},
+        {id: 5, title: 'Супы', slug: 'soup'},  
         {id: 6, title: 'Десерты', slug: 'dessert'},
         {id: 7, title: 'Тесто', slug: 'testo'},
         {id: 8, title: 'Загатовки', slug: 'zagotovki'},
+        {id: 9, title: 'Напитки', slug: 'drink'},
     ]
 }

@@ -25,3 +25,10 @@ header {
 .blackHeader {
     background-color: #000;
 }
+
+@media screen and (max-width: 420px){
+    header .header .logo .title {
+        font-size: 30px;
+        padding: 4px 12px;
+    }
+}

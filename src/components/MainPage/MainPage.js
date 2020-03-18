@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './mainPage.module.scss';
 import { Slide } from 'react-slideshow-image';
+import ScrollToTop from '../common/ScrollToTop/ScrollToTop';
 
 import img1 from '../../assets/images/ezhevika_iagody_lozhka_142705_1920x1080.jpg';
 import img2 from '../../assets/images/kofe_kruzhka_stol_121545_1920x1080.jpg';
@@ -19,20 +20,22 @@ const properties = {
 const BackgroundImage = () => {
     return (
         <div className={s.slideContainer}>
-            <Slide {...properties}>
-                <div className={s.eachSlide}>
-                    <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+            <ScrollToTop>
+                <Slide {...properties}>
+                    <div className={s.eachSlide}>
+                        <div style={{'backgroundImage': `url(${slideImages[0]})`}}>
+                        </div>
                     </div>
-                </div>
-                <div className={s.eachSlide}>
-                    <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+                    <div className={s.eachSlide}>
+                        <div style={{'backgroundImage': `url(${slideImages[1]})`}}>
+                        </div>
                     </div>
-                </div>
-                <div className={s.eachSlide}>
-                    <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
+                    <div className={s.eachSlide}>
+                        <div style={{'backgroundImage': `url(${slideImages[2]})`}}>
+                        </div>
                     </div>
-                </div>
-            </Slide>
+                </Slide>
+            </ScrollToTop>
         </div>
     )
 }

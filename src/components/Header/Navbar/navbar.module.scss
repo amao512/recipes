@@ -29,3 +29,9 @@
         }
     }
 }
+
+@media screen and (max-width: 420px){
+    .navbar ul .link {
+        font-size: 12px;
+    }
+}

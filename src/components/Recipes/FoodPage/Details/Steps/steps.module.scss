@@ -1,8 +1,8 @@
 .steps {
     .eachStep {
-        max-width: 100%;
-        min-width: 360px;
-        // margin: 0 auto;
+        max-width: 90%;
+        min-width: 320px;
+        margin: 0 auto;
         margin-bottom: 20px;
         border: .5px solid #d3d3d3;
         border-radius: 10px;
@@ -25,6 +25,23 @@
             .instruction {
                 font-size: 18px;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 990px){
+    .steps {
+        grid-row: 2;
+    }
+}
+
+@media screen and (max-width: 420px){
+    .steps .eachStep .info {
+        .step {
+            font-size: 18px;
+        }
+        .instruction {
+            font-size: 15px;
         }
     }
 }
