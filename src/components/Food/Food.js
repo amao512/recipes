@@ -1,10 +1,10 @@
 import React from 'react';
-import s from './foodPage.module.scss';
+import s from './food.module.scss';
 import FoodSlider from './FoodSlider/FoodSlider';
 import Details from './Details/Details';
 import FoodInfo from './FoodInfo/FoodInfo';
 
-const FoodPage = props => {
+const Food = props => {
     return (
         <div>
             <div className="container">
@@ -18,4 +18,4 @@ const FoodPage = props => {
     )
 }
 
-export default FoodPage;
+export default Food

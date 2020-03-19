@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import s from './foodSlider.module.scss';
-import { data } from '../../../../data/foods';
+import { data } from '../../../data/foods';
 import SliderCard from './SliderCard/SliderCard';
 import {CarouselProvider, ButtonBack, ButtonNext} from 'pure-react-carousel';
 import 'pure-react-carousel/dist/react-carousel.es.css';

@@ -1,7 +1,7 @@
 import React from 'react';
 import s from './foodCard.module.scss';
 
-const FoodCard = ({title, img}) => {
+const FoodCard = ({ title, img }) => {
     return (
         <div className={s.foodCard}>
             <div className={s.img}>

@@ -3,24 +3,24 @@ import './App.css';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import { compose } from 'redux';
 
-import HeaderContainer from './components/Header/HeaderContainer';
+import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import Loading from './components/common/Loading/Loading';
+import Loading from './components/Loading/Loading';
 
-const MainPage = lazy(() => import('./components/MainPage/MainPage'));
-const RecipesContainer = lazy(() => import('./components/Recipes/RecipesContainer'));
-const Faq = lazy(() => import('./components/Faq/Faq'));
+const Home = lazy(() => import('./pages/Home'));
+const Recipes = lazy(() => import('./pages/Recipes'));
+const Faq = lazy(() => import('./pages/Faq'));
 
 const App = () => {
   return (
       <div className="App">
           <Suspense fallback={<Loading />}> 
-              <HeaderContainer />
+              <Header />
               
               <div className="content">
                   <Switch>
-                    <Route exact path='/' component={ MainPage } />
-                    <Route path='/recipes/:slug?' component={ RecipesContainer } />
+                    <Route exact path='/' component={ Home } />
+                    <Route path='/recipes/:slug?' component={ Recipes } />
                     <Route path='/faq' component={ Faq } />
                   </Switch>
               </div>

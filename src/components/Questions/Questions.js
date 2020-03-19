@@ -1,7 +1,7 @@
 import React from 'react';
-import s from './faq.module.scss';
+import s from './questions.module.scss';
 
-const Faq = () => {
+const Questions = () => {
     return (
         <div className={s.faq}>
             <div className='container'>
@@ -13,4 +13,4 @@ const Faq = () => {
     )
 }
 
-export default Faq;
+export default Questions;

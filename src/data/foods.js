@@ -4,16 +4,6 @@ export const data = {
     food: [
         {   
             id: v4(),
-            index: 0,
-            slug: "spinach-and-beetroot-salad",
-            category: "salads",
-            title: "Spinach & Beetroot Salad",
-            img: "https://static.pexels.com/photos/5928/salad-healthy-diet-spinach.jpg",
-            info: "This is one of the simplest salads ever, tastes amazing and looks like you've made a real effort.",
-        },
-
-        {   
-            id: v4(),
             index: 1,
             slug: "kurinoe-file-na-skovorode-gril",
             category: "dishes",

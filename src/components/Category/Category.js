@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import Category from './Category';
 import { withRouter } from 'react-router-dom';
 import { connect } from 'react-redux';
-import { changeFoodCategory, allFoodCategory } from '../../../redux/foodsReducer';
+import { changeFoodCategory, allFoodCategory } from '../../redux/foodsReducer';
 import { compose } from 'redux';
 import s from './category.module.scss';
+import { NavLink } from 'react-router-dom';
 
-const CategoryContainer = props => {
-    const {changeFoodCategory, match, allFoodCategory} = props;
+
+const Category = ({ changeFoodCategory, match, allFoodCategory, categories }) => {
     const slugId = match.params.slug;
 
     !slugId ? allFoodCategory() : changeFoodCategory(slugId);
@@ -19,7 +19,20 @@ const CategoryContainer = props => {
 
     return (
         <div>
-            {categoryCondition && <Category categories={props.categories} setCategoryTitle={props.setCategoryTitle} slugId={slugId}/>}
+            {categoryCondition && 
+                <div className={s.category}>
+                    <div className='container'>
+                        <ul>
+                            {categories.map(c => (
+                                <NavLink key={c.id} className={s.foodLink} 
+                                    to={'/recipes/' + c.slug}
+                                    // onClick={() => setCategoryTitle(c.title)}
+                                    >{c.title}</NavLink>
+                            ))}
+                        </ul>
+                    </div>
+                </div>
+            }
             
             <div className={s.showHideCategories}>
                 <i className='material-icons' onClick={categoryCondition ? hideCategory : showCategory}>
@@ -37,4 +50,4 @@ const mstp = state => ({
 export default compose(
     connect(mstp, { changeFoodCategory, allFoodCategory }),
     withRouter
-)(CategoryContainer);
+)(Category);

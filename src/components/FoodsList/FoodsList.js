@@ -1,15 +1,19 @@
 import React from 'react';
-import s from './foodsList.module.scss';
-import FoodCard from './FoodCard/FoodCard';
+import { connect } from 'react-redux';
+import { compose } from 'redux';
+import { withRouter } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import FoodCard from '../FoodCard/FoodCard';
+import s from './foodsList.module.scss';
 
-const FoodsList = ({ foods, categoryTitle, match }) => {
+const FoodsList = ({ categories, match, foods }) => {
+
+    const categoryTitle = categories.map(c => c.slug === match.params.slug && c.title)
+
     return (
         <div>
             <div className='container'>
-                {match.params.slug && 
-                    <h1 className={s.categoryTitle}>{categoryTitle}</h1>
-                }
+                { match.params.slug && <h1 className={s.categoryTitle}>{categoryTitle}</h1> }
 
                 <div className={s.foods}>
                     {foods.map(food => (
@@ -26,4 +30,9 @@ const FoodsList = ({ foods, categoryTitle, match }) => {
     )
 }
 
-export default FoodsList;
+const mstp = state => ({
+    foods: state.foods.food,
+    categories: state.category.categories,
+})
+
+export default compose(connect(mstp), withRouter)(FoodsList);
