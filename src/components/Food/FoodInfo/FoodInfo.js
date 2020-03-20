@@ -1,11 +1,12 @@
 import React from 'react';
 import s from './foodInfo.module.scss';
+import loading from '../../../assets/gif/preview.gif';
 
 const FoodInfo = ({img, title, info, ingredients, steps}) => {
     return (
         <div className={s.main}>
             <div className={s.foodImage}>
-                <img src={img} alt="foodPhoto"/>
+                <img src={img || loading} alt="foodPhoto"/>
             </div>
 
             <div className={s.foodInfo}>

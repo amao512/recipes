@@ -26,7 +26,6 @@ const Category = ({ changeFoodCategory, match, allFoodCategory, categories }) =>
                             {categories.map(c => (
                                 <NavLink key={c.id} className={s.foodLink} 
                                     to={'/recipes/' + c.slug}
-                                    // onClick={() => setCategoryTitle(c.title)}
                                     >{c.title}</NavLink>
                             ))}
                         </ul>
